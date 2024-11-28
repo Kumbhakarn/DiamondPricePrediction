@@ -21,7 +21,7 @@ The dataset used for this project contains information about diamonds with the f
 - **price**: The price of the diamond (target variable).
 - **x, y, z**: Dimensions of the diamond (length, width, and depth).
 
-![alt text](E:\DiamondPricePrediction\images\Diamond Anatomy.jpg)
+https://github.com/Kumbhakarn/DiamondPricePrediction/commit/4dcf23b24f46ad8172e19ec034565e9111416434
 
 ## Tools and Technologies
 - **Python**: The primary programming language used for data manipulation and model building.
