@@ -1,3 +1,10 @@
 pandas 
 numpy 
 flask
+ipykernel
+matplotlib
+seaborn
+scipy
+scikit-learn
+logger
+gunicorn

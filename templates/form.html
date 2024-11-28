@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #004d99;
+            font-size: 2.5em;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+
+        .form-input, .form-select {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-input:focus, .form-select:focus {
+            border-color: #004d99;
+            outline: none;
+        }
+
+        .submit-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #0057b8;
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #008000;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background-color: #666;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #444;
+        }
+
+        .diamond-image {
+            margin-top: 20px;
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .suggestion {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Diamond Price Prediction Form</h2>
+
+    <form method="POST">
+        <label for="carat">Carat:</label>
+        <input type="number" id="carat" name="carat" class="form-input" step="0.01" min="0" required>
+        <div class="suggestion">Example: 0.2 to 5.0</div>
+        <div class="feature-description">
+            <strong>Carat:</strong> This represents the weight of the diamond. A higher carat value generally increases the price.
+        </div>
+
+        <label for="depth">Depth:</label>
+        <input type="number" id="depth" name="depth" class="form-input" step="0.1" min="0" required>
+        <div class="suggestion">Example: 50 to 70 (percentage)</div>
+        <div class="feature-description">
+            <strong>Depth:</strong> The depth percentage of the diamond is the ratio of the diamond's height to its average diameter. Ideal depth can enhance sparkle.
+        </div>
+
+        <label for="table">Table:</label>
+        <input type="number" id="table" name="table" class="form-input" step="0.1" min="0" required>
+        <div class="suggestion">Example: 50 to 70 (percentage)</div>
+        <div class="feature-description">
+            <strong>Table:</strong> The table percentage refers to the flat surface of the diamond. A good balance between table size and depth improves brilliance.
+        </div>
+
+        <label for="x">X Dimension:</label>
+        <input type="number" id="x" name="x" class="form-input" step="0.1" min="0" required>
+        <div class="suggestion">Example: 4.0 to 10.0 (in mm)</div>
+        <div class="feature-description">
+            <strong>X Dimension:</strong> This is the diameter of the diamond from one side to the other. It helps define the size of the stone.
+        </div>
+
+        <label for="y">Y Dimension:</label>
+        <input type="number" id="y" name="y" class="form-input" step="0.1" min="0" required>
+        <div class="suggestion">Example: 4.0 to 10.0 (in mm)</div>
+        <div class="feature-description">
+            <strong>Y Dimension:</strong> This is the other diameter of the diamond, measured perpendicular to the X dimension.
+        </div>
+
+        <label for="z">Z Dimension:</label>
+        <input type="number" id="z" name="z" class="form-input" step="0.1" min="0" required>
+        <div class="suggestion">Example: 2.5 to 8.0 (in mm)</div>
+        <div class="feature-description">
+            <strong>Z Dimension:</strong> This represents the height or depth of the diamond. It contributes to the overall size and brilliance.
+        </div>
+
+        <label for="cut">Cut:</label>
+        <select id="cut" name="cut" class="form-select" required>
+            <option value="Fair">Fair</option>
+            <option value="Good">Good</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Premium">Premium</option>
+            <option value="Ideal">Ideal</option>
+        </select>
+        <div class="feature-description">
+            <strong>Cut:</strong> The cut quality affects the diamond’s brilliance. A well-cut diamond reflects light beautifully, raising its value.
+        </div>
+
+        <label for="color">Color:</label>
+        <select id="color" name="color" class="form-select" required>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+            <option value="I">I</option>
+            <option value="J">J</option>
+        </select>
+        <div class="feature-description">
+            <strong>Color:</strong> Diamonds are graded on a scale from D (colorless) to J (light yellow or brown). The higher the grade, the rarer and more valuable.
+        </div>
+
+        <label for="clarity">Clarity:</label>
+        <select id="clarity" name="clarity" class="form-select" required>
+            <option value="I1">I1</option>
+            <option value="SI2">SI2</option>
+            <option value="SI1">SI1</option>
+            <option value="VS2">VS2</option>
+            <option value="VS1">VS1</option>
+            <option value="VVS2">VVS2</option>
+            <option value="VVS1">VVS1</option>
+            <option value="IF">IF</option>
+        </select>
+        <div class="feature-description">
+            <strong>Clarity:</strong> Clarity refers to the number and size of internal or external flaws (inclusions or blemishes). Higher clarity improves the diamond’s value.
+        </div>
+
+        <button type="submit" class="submit-button">Predict Price</button>
+    </form>
+
+    {% if final_result %}
+    <div class="result">
+        <p>Predicted Price: ₹ {{ "{:,.2f}".format(final_result) }}</p>
+        <img src="E:\DiamondPricePrediction\images\Diamond Anatomy.jpg" alt="Diamond Image" class="diamond-image">
+    </div>
+    {% endif %}
+
+    <a href="{{ url_for('home_page') }}" class="back-button">Back to Home</a>
+</body>
+</html>

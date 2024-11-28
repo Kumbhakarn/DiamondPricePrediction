@@ -6,3 +6,9 @@ Author-email: akashkumbhakarn@gmail.com
 Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: flask
+Requires-Dist: ipykernel
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: logger

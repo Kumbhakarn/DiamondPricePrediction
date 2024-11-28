@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #004d99;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0057b8;
+        }
+
+        .footer {
+            margin-top: 50px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diamond Price Prediction</h1>
+    <p>Welcome to the Diamond Price Prediction App! Click below to input your diamond details and predict the price.</p>
+    <a href="{{ url_for('predict_datapoint') }}" class="cta-button">Predict Your Diamond Price</a>
+
+    <div class="footer">
+        <p>&copy; 2024 Diamond Price Prediction App. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</body>
+</html>
