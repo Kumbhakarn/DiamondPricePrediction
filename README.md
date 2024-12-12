@@ -21,7 +21,7 @@ The dataset used for this project contains information about diamonds with the f
 - **price**: The price of the diamond (target variable).
 - **x, y, z**: Dimensions of the diamond (length, width, and depth).
 
-![alt text](E:\DiamondPricePrediction\images\Diamond Anatomy.jpg)
+https://github.com/Kumbhakarn/DiamondPricePrediction/commit/4dcf23b24f46ad8172e19ec034565e9111416434
 
 ## Tools and Technologies
 - **Python**: The primary programming language used for data manipulation and model building.
@@ -121,7 +121,6 @@ The table below shows the R² scores (accuracy) of different models used for pre
 | AdaBoost          | 0.821043  |
 | KNN               | 0.968191  |
 
-Here is the table for the **R² score** (accuracy metrics) of different models, formatted for your **README.md** file:
 
 ### Explanation:
 - This table summarizes the **R² score** for each model, where a higher R² score indicates a better fit of the model to the data.
