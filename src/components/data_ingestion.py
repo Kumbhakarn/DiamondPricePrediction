@@ -17,7 +17,6 @@ class DataIngestionconfig:
     
 
 ## Create a data Ingestion Class
-
 class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionconfig()
